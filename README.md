@@ -1,4 +1,8 @@
-试用vitest的笔记
+【崔学社】vitest入门课程学习 
+20230905
+
+[视频1](https://www.bilibili.com/video/BV1mg41167VX/)
+[视频2](https://www.bilibili.com/video/BV1hd4y1P7aQ/)
 # 1 起步
 #### 创建项目
 用vite新建一个vue-ts项目，选vue、ts就行，其他默认
@@ -14,7 +18,7 @@ npm i -D vitest
 #### 第一个例子
 在根目录下新建一个tests文件夹
 
-tsconfig.ts中的include字段（但是没有配置的时候，ts检测也没有问题？）
+tsconfig.ts中的include字段
 ```json
 {
   "include": [..., "tests/**/*.ts"],
@@ -49,7 +53,7 @@ test('sum', () => {
 #### Vitest的特点
 1. 兼容 Jest：Api和Jest非常类似，从 Jest 迁移很简单。
 2. 即时测试：智能文件监听模式，就像是测试的 HMR！
-  1. 如果不想要即时测试，可以把命令配置成
+  如果不想要即时测试，可以把命令配置成
 ```json
 {
   "scripts": {
